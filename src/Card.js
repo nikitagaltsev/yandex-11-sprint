@@ -1,4 +1,4 @@
-class Card {
+export default class Card {
   constructor(cardData, template, openImageCallback, deleteCard, userId) {
     this.cardData = cardData;
     this.name = cardData.name;

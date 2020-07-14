@@ -1,3 +1,12 @@
+import Card from './Card.js'
+import CardList from './CardList.js'
+import FormValidator from './FormValidator.js'
+import UserInfo from './UserInfo.js'
+import Popup from './Popup.js'
+import Api from './Api.js'
+import ImagePopup from './ImagePopup.js'
+import "./pages/index.css";
+
 (function () {
   const placesContainer = document.querySelector('.places-list');
   const template = document.querySelector('#place-template').content;
