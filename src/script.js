@@ -1,3 +1,12 @@
+import Card from './Card.js'
+import CardList from './CardList.js'
+import FormValidator from './FormValidator.js'
+import UserInfo from './UserInfo.js'
+import Popup from './Popup.js'
+import Api from './Api.js'
+import ImagePopup from './ImagePopup.js'
+import "./pages/index.css";
+
 (function () {
   const placesContainer = document.querySelector('.places-list');
   const template = document.querySelector('#place-template').content;
@@ -29,8 +38,10 @@
   personValidity.setEventListeners();
   placeValidity.setEventListeners();
 
+  const serverUrl = NODE_ENV === 'dev' ? 'http://praktikum.tk/cohort11' : 'https://praktikum.tk/cohort11';
+
   const api = new Api({
-    baseUrl: 'https://praktikum.tk/cohort11',
+    baseUrl: serverUrl,
     headers: {
       authorization: 'f0b46149-76a0-417e-b09a-86d55af63e4b',
       'Content-Type': 'application/json'

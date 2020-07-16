@@ -1,4 +1,4 @@
-class FormValidator {
+export default class FormValidator {
 
   static _errorMessages = {
     empty: 'Это обязательное поле',
